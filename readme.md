@@ -12,18 +12,26 @@
 |[Kkohma](https://github.com/hminkim)|[Ruyha](https://github.com/RuyHa)|[Felix](https://github.com/Felix9971)|[Joon](https://github.com/ChickenJoah)|[Toby](https://github.com/E-know)|
 
 ## Introduce Project
-<img alt="MissionView" src="https://user-images.githubusercontent.com/103024858/183246092-78894a93-8af2-4b7d-8d07-0a920dce84cc.jpg" width = 240>.
-<img alt="MissionClearView" src="https://user-images.githubusercontent.com/103024858/183246098-fc44a519-5cea-4091-ba62-88dc43f63e2c.jpg" width = 240>.
-<img alt="HistoryView" src="https://user-images.githubusercontent.com/103024858/183246101-3daffede-818e-43fa-a976-fd4713d50f62.jpg" width = 240>.
-<img alt="Re" src="https://user-images.githubusercontent.com/103024858/183246099-5f36315c-5b84-4fdb-a4ee-94ce7f0c32e4.jpg" width = 240>
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.001.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.002.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.003.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.004.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.005.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.006.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.008.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.009.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.010.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.011.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.012.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.013.gif">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.014.gif">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.016.jpeg">
+<img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.017.jpeg">
 
 ## Tools
 **1. 테크**
-  - ![swift](https://img.shields.io/badge/Swift-5.0%2B-brightgreen)
-  - ![Platforms](https://img.shields.io/badge/Platforms-iOS%2015%2B%20%7C%20macOS-green)
-  - UIKit
+  - UIKit (Storyboard)
   - CoreData
-  - Storyboard
 
 **2. 디자인**
   - Sketch
