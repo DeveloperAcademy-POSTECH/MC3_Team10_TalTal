@@ -177,10 +177,10 @@ extension MissionViewController {
         //UserDefaults의 값이 nil이면모든 해당 미션이클리어된 상태입니다.
         //때문에 주간 일간 미션의 UserDefaults의 값이 둘 다 nil이라면 모든 미션이 클리어된 상태입니다.
         //사실 상수에 할당 안해도 되지만 조건문에서 조건이 너무 길어져 할당했습니다.
-        let dailyQuestCount = UserDefaults.standard.string(forKey: "currentDailyMission")
-        let weeklyQuestCount = UserDefaults.standard.string(forKey: "currentWeeklyMission")
+        let dailyQuestValue = UserDefaults.standard.string(forKey: "currentDailyMission")
+        let weeklyQuestValue = UserDefaults.standard.string(forKey: "currentWeeklyMission")
         
-        if dailyQuestCount == nil && weeklyQuestCount == nil{
+        if dailyQuestValue == nil && weeklyQuestValue == nil{
             //버튼을 숨김처리하는 코드
             endingViewPushButton.isHidden = false
             return
