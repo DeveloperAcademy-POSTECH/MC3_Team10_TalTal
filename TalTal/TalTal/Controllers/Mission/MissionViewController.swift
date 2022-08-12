@@ -17,15 +17,15 @@ final class MissionViewController: UIViewController {
     @IBOutlet weak var questTextLabel: UILabel!
     @IBOutlet weak var endingViewPushButton: UIButton!
     
-    //endingViewPushButton이 클릭되었을때
     @IBAction func endingViewPushButton(_ sender: Any) {
-        
         //코드로 뷰를 Show하는 부분 입니다.
         let storyboard = UIStoryboard(name: "Ending", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "Ending") as! EndingViewController
         show(secondVC, sender: self)
+        
     }
-    
+    //endingViewPushButton이 클릭되었을때
+ 
     private var dailyMission: Mission? = nil
     private var weeklyMission: Mission? = nil
     
