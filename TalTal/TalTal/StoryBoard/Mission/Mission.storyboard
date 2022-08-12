@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,14 +32,32 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kVy-Fn-qBl" userLabel="fullStack View">
                                 <rect key="frame" x="16" y="101.33333333333331" width="358" height="617.33333333333348"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미션" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-us-X4p" userLabel="TitleLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="40.666666666666664"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSU-EE-z8O">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="미션" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jd-us-X4p" userLabel="TitleLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="318" height="40"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2U6-fz-AeR">
+                                                <rect key="frame" x="318" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="5Vy-Py-DJ9"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Qef-PQ-0E2"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="endingViewPushButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="IUf-Dj-dxB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaL-93-oRU" userLabel="TextLabel">
-                                        <rect key="frame" x="0.0" y="89" width="358" height="79"/>
+                                        <rect key="frame" x="0.0" y="88.666666666666686" width="358" height="79"/>
                                         <string key="text">지금까지
 25 개의 일일 미션과
 3 개의 주간 미션을 완료했어요!</string>
@@ -62,8 +81,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Gb9-fk-IKS" firstAttribute="height" secondItem="kVy-Fn-qBl" secondAttribute="height" multiplier="0.65" id="UZn-sF-mrd"/>
-                                    <constraint firstItem="MaL-93-oRU" firstAttribute="width" secondItem="2Jd-us-X4p" secondAttribute="width" id="ayv-Wf-Alf"/>
-                                    <constraint firstItem="2Jd-us-X4p" firstAttribute="width" secondItem="kVy-Fn-qBl" secondAttribute="width" id="d2l-rg-xGn"/>
+                                    <constraint firstItem="MaL-93-oRU" firstAttribute="width" secondItem="kVy-Fn-qBl" secondAttribute="width" id="ehp-Xz-Tex"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -88,17 +106,21 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="dailyView" destination="Vef-Eq-EtZ" id="gdf-Ha-GQy"/>
+                        <outlet property="endingViewPushButton" destination="2U6-fz-AeR" id="iTi-6g-MYv"/>
                         <outlet property="questTextLabel" destination="MaL-93-oRU" id="90p-Ah-f2C"/>
                         <outlet property="weeklyView" destination="a3Q-3d-0gR" id="Aor-vP-8T6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-159.42028985507247" y="67.633928571428569"/>
+            <point key="canvasLocation" x="-160" y="67.535545023696685"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkmark.square.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

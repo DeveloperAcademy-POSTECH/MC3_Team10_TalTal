@@ -15,7 +15,17 @@ final class MissionViewController: UIViewController {
     @IBOutlet weak var dailyView: MissionQuestView!
     @IBOutlet weak var weeklyView: MissionQuestView!
     @IBOutlet weak var questTextLabel: UILabel!
+    @IBOutlet weak var endingViewPushButton: UIButton!
     
+    //endingViewPushButton이 클릭되었을때
+    @IBAction func endingViewPushButton(_ sender: Any) {
+        //코드로 뷰를 Show하는 부분 입니다.
+        let storyboard = UIStoryboard(name: "Ending", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(identifier: "Ending") as! EndingViewController
+        secondVC.modalPresentationStyle = .fullScreen
+        show(secondVC, sender: self)
+    }
+ 
     private var dailyMission: Mission? = nil
     private var weeklyMission: Mission? = nil
     
@@ -41,6 +51,8 @@ final class MissionViewController: UIViewController {
         settingQuestView()
         settingTextLabel()
         isMissonClear(daily: dailyBtnValue, weekly: weeklyBtnValue)
+        settingEndingButton()
+        endingButtonViewingCheck()
     }
     
 }
@@ -152,6 +164,33 @@ extension MissionViewController {
         dailyView.layer.cornerRadius = missionAessts.viewCornerRadius
         weeklyView.layer.cornerRadius = missionAessts.viewCornerRadius
     }
+    
+    //엔딩버튼의 디자인관련된 함수입니다.
+    func settingEndingButton(){
+        endingViewPushButton.imageView?.contentMode = .scaleAspectFit
+        endingViewPushButton.setImage(UIImage(named: "launchScreenimage"), for: .normal)
+        endingViewPushButton.imageEdgeInsets = UIEdgeInsets(top: -10, left: -10, bottom: -10, right: -10)
+    }
+    
+    //모든 미션이 클리어된 상태에서만 엔딩뷰 버튼이 보여야 한다.
+    func endingButtonViewingCheck(){
+        //UserDefaults의 값이 nil이면모든 해당 미션이클리어된 상태입니다.
+        //때문에 주간 일간 미션의 UserDefaults의 값이 둘 다 nil이라면 모든 미션이 클리어된 상태입니다.
+        //사실 상수에 할당 안해도 되지만 조건문에서 조건이 너무 길어져 할당했습니다.
+        let dailyQuestValue = UserDefaults.standard.string(forKey: "currentDailyMission")
+        let weeklyQuestValue = UserDefaults.standard.string(forKey: "currentWeeklyMission")
+        
+        if dailyQuestValue == nil && weeklyQuestValue == nil{
+            //버튼을 숨김처리하는 코드
+            endingViewPushButton.isHidden = false
+            return
+        }
+        
+        //MARK: 개발단계에서는 버튼이 보여야 동작에 관한 테스트가 가능해서 하단 코드를 주석 처리 했습니다.
+        //미션을 모두 클리어한 상태가 아니면 버튼을 숨김처리
+//        endingViewPushButton.isHidden = true
+    }
+    
 }
 
 // TODO: 만약 일일 미션은 모두 소진됐는데 주간 미션은 아직 남아 있는 경우 뷰 처리도 필요할 것 같아요

@@ -20,6 +20,8 @@
 		70AAD5E9288DD3A0001CEE5F /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAD5E8288DD3A0001CEE5F /* HistoryViewController.swift */; };
 		70AAD5EB288DD3AE001CEE5F /* ReflectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AAD5EA288DD3AE001CEE5F /* ReflectionViewController.swift */; };
 		70ACC640289BB89D00ECEF42 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70ACC642289BB89D00ECEF42 /* InfoPlist.strings */; };
+		70ACC64528A60BCE00ECEF42 /* Ending.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ACC64428A60BCE00ECEF42 /* Ending.storyboard */; };
+		70ACC64728A60C1D00ECEF42 /* EndingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACC64628A60C1D00ECEF42 /* EndingViewController.swift */; };
 		70ACFB04288E7B20006C23E5 /* MissionQuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACFB03288E7B20006C23E5 /* MissionQuestView.swift */; };
 		70ACFB07288E7B67006C23E5 /* MissionQuestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70ACFB06288E7B67006C23E5 /* MissionQuestView.xib */; };
 		70ACFB0A288E7C07006C23E5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70ACFB09288E7C07006C23E5 /* UIViewExtension.swift */; };
@@ -53,6 +55,8 @@
 		70AAD5EA288DD3AE001CEE5F /* ReflectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectionViewController.swift; sourceTree = "<group>"; };
 		70ACC641289BB89D00ECEF42 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70ACC643289BB89F00ECEF42 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70ACC64428A60BCE00ECEF42 /* Ending.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ending.storyboard; sourceTree = "<group>"; };
+		70ACC64628A60C1D00ECEF42 /* EndingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndingViewController.swift; sourceTree = "<group>"; };
 		70ACFB03288E7B20006C23E5 /* MissionQuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionQuestView.swift; sourceTree = "<group>"; };
 		70ACFB06288E7B67006C23E5 /* MissionQuestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionQuestView.xib; sourceTree = "<group>"; };
 		70ACFB09288E7C07006C23E5 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				70AAD5DE288DD317001CEE5F /* MissionClear.storyboard */,
 				70AAD5E0288DD32B001CEE5F /* History.storyboard */,
 				70AAD5E2288DD342001CEE5F /* Reflection.storyboard */,
+				70ACC64428A60BCE00ECEF42 /* Ending.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 				70AAD5E6288DD397001CEE5F /* MissionClearViewController.swift */,
 				70AAD5E8288DD3A0001CEE5F /* HistoryViewController.swift */,
 				70AAD5EA288DD3AE001CEE5F /* ReflectionViewController.swift */,
+				70ACC64628A60C1D00ECEF42 /* EndingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				70AAD5DD288DD303001CEE5F /* Mission.storyboard in Resources */,
 				702E25B02898FE20002CB6E3 /* Localizable.strings in Resources */,
 				70ACFB07288E7B67006C23E5 /* MissionQuestView.xib in Resources */,
+				70ACC64528A60BCE00ECEF42 /* Ending.storyboard in Resources */,
 				70AAD5DF288DD317001CEE5F /* MissionClear.storyboard in Resources */,
 				70AAD5E3288DD342001CEE5F /* Reflection.storyboard in Resources */,
 				70AAD5E1288DD32B001CEE5F /* History.storyboard in Resources */,
@@ -283,6 +290,7 @@
 				70DEFD9A28912CD300F6C0F8 /* MissionAssets.swift in Sources */,
 				FBE0139328937E9C007D1819 /* CompleteMission+CoreDataProperties.swift in Sources */,
 				FBDA9121288EF31500D126E6 /* HistoryCell.swift in Sources */,
+				70ACC64728A60C1D00ECEF42 /* EndingViewController.swift in Sources */,
 				70AAD5E7288DD397001CEE5F /* MissionClearViewController.swift in Sources */,
 				70AAD5EB288DD3AE001CEE5F /* ReflectionViewController.swift in Sources */,
 				709996B028990DD600FF9BDC /* StirngExtension.swift in Sources */,
