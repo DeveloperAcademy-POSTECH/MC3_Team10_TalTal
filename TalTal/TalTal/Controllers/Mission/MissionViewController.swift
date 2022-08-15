@@ -16,6 +16,7 @@ final class MissionViewController: UIViewController {
     @IBOutlet weak var weeklyView: MissionQuestView!
     @IBOutlet weak var questTextLabel: UILabel!
     @IBOutlet weak var endingViewPushButton: UIButton!
+    @IBOutlet weak var missionTabBarItem: UITabBarItem!
     
     //endingViewPushButton이 클릭되었을때
     @IBAction func endingViewPushButton(_ sender: Any) {
@@ -43,6 +44,12 @@ final class MissionViewController: UIViewController {
     
     var weeklyClearQuest = 404
     var weeklyQuestStirng = "앱을 재설치 해주세요."
+    
+    // 하단주석3 참고
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        missionTabBarItem.title = "TabBarItemMinsson".localized
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -358,4 +365,20 @@ extension MissionViewController {
  dailyView와 weekilyView는 제작한 xib파일입니다. (같은 파일)
  해당 view를 사용하기위해서 설정 하는 함수를 불러와 사용했으며
  view의 cornerRadius를 추가하기위해 값을 주었습니다.
+ 
+ 하단 주석3
+ missionTabBarItem.title = "TabBarItemMinsson".localized
+ 이 코드는 단순합니다.
+ 하지만 왜 뷰 라이프 사이클에 넣지 않았을까요?
+ 탭바의 아이템은 각각의 뷰컨트롤러에서 설정이 가능하고
+ 뷰 라이프 사이클은 뷰의 생명주기에 따라 실행됩니다.
+ 즉, 0번째 탭바 이후 (혹은 가장 먼저실행되는 뷰)말고는
+ 뷰가 실행되기 전까지 탭바 아이템을 설정할 수 없습니다.
+ 그래서 생명주기에 설정을 하면
+ 해당 탭바가 실행되기 전까지는 탭바아이템의 텍스트나 이미지가 누락되는 가슴 아픈 일이 생겨서
+ override func awakeFromNib() {
+ }
+ 안에 코드를 작성한것입니다.
+ 
  */
+

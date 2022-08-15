@@ -107,6 +107,7 @@
                     <connections>
                         <outlet property="dailyView" destination="Vef-Eq-EtZ" id="gdf-Ha-GQy"/>
                         <outlet property="endingViewPushButton" destination="2U6-fz-AeR" id="iTi-6g-MYv"/>
+                        <outlet property="missionTabBarItem" destination="fzo-8E-c5x" id="Vyj-U2-mQm"/>
                         <outlet property="questTextLabel" destination="MaL-93-oRU" id="90p-Ah-f2C"/>
                         <outlet property="weeklyView" destination="a3Q-3d-0gR" id="Aor-vP-8T6"/>
                     </connections>

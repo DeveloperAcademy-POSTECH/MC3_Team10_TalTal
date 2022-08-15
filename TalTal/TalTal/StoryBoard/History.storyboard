@@ -131,6 +131,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="historyMainLabel" destination="2DG-cM-HgV" id="7mE-Z1-QKF"/>
+                        <outlet property="historyTabBarItem" destination="uUb-wh-bae" id="Isd-1O-ii5"/>
                         <outlet property="missioSegmentedControl" destination="ege-A2-Oop" id="QLw-Ax-JMb"/>
                         <outlet property="missionTableView" destination="TMn-Q6-S1c" id="kHm-bo-AnS"/>
                         <outlet property="nilClearMissionLabel" destination="xW9-bc-NP1" id="E0n-pt-GIY"/>

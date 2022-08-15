@@ -15,6 +15,7 @@ class HistoryViewController: UIViewController {
     @IBOutlet weak var missionTableView: UITableView!
     @IBOutlet weak var segmentedController: UISegmentedControl!
     
+    @IBOutlet weak var historyTabBarItem: UITabBarItem!
     //클리어한 미션이 하나도 없을 때 나오는 텍스트입니다.
     @IBOutlet weak var nilClearMissionLabel: UILabel!
     
@@ -24,6 +25,12 @@ class HistoryViewController: UIViewController {
     
     // segmentedControl에 따른 다른 히스토리를 보여주기 위한 변수
     var status: MissionQuest = .daily
+    
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        historyTabBarItem.title = "TabBarItemHistory".localized
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
