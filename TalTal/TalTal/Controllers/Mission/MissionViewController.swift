@@ -48,7 +48,7 @@ final class MissionViewController: UIViewController {
     // 하단주석3 참고
     override func awakeFromNib() {
         super.awakeFromNib()
-        missionTabBarItem.title = "TabBarItemMinsson".localized
+        missionTabBarItem.title = "TabBarItemMisson".localized
     }
     
     override func viewDidLoad() {
@@ -367,7 +367,7 @@ extension MissionViewController {
  view의 cornerRadius를 추가하기위해 값을 주었습니다.
  
  하단 주석3
- missionTabBarItem.title = "TabBarItemMinsson".localized
+ missionTabBarItem.title = "TabBarItemMisson".localized
  이 코드는 단순합니다.
  하지만 왜 뷰 라이프 사이클에 넣지 않았을까요?
  탭바의 아이템은 각각의 뷰컨트롤러에서 설정이 가능하고
