@@ -8,6 +8,11 @@
 
 "Mission Clear" = "미션완료";
 
+//TabBarItemTitle
+"TabBarItemMisson" = "미션";
+"TabBarItemHistory" = "기록";
+
+
 
 //MARK: DailyMisson
 // -beginner-
