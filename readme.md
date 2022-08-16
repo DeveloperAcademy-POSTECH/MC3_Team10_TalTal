@@ -1,4 +1,5 @@
 # Team10 - TalTal
+
 <img src="https://user-images.githubusercontent.com/103024858/183246263-9921cc12-eae3-4df7-836a-7557cfcaa641.jpg">
 <p>
   <img src="https://img.shields.io/badge/Swift-5.0%2B-brightgreen">
