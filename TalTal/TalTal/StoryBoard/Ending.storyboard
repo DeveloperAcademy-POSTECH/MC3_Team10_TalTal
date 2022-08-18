@@ -20,11 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="OAe-7o-VIF">
-                                        <barButtonItem key="leftBarButtonItem" title="X" id="cQ2-sJ-Ppw">
-                                            <connections>
-                                                <action selector="closeBtn:" destination="Y6W-OH-hqX" id="C8A-Oi-jAT"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="X" image="chevron.left" catalog="system" id="cQ2-sJ-Ppw" userLabel="closeButton"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -121,6 +117,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="launchScreenimage" width="2048" height="2048"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

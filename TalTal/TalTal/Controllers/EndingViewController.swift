@@ -13,12 +13,12 @@ class EndingViewController: UIViewController {
 
     @IBOutlet weak var endingSubTitle: UILabel!
     @IBOutlet weak var endingComment: UILabel!
-    @IBOutlet weak var closeButton: UIBarButtonItem!
+    @IBOutlet weak var closeButton: UIButton!
     
-
-    //    @IBAction func closeButton(_ sender: Any) {
-//        self.dismiss(animated: true)
-//    }
+    //TODO: closeButton을 누르면 MissionView로 가야함.
+    @IBAction func closeButton(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class EndingViewController: UIViewController {
 
 
 //MARK: MissionAessts를 가지고 일일미션과 주간미션의 색상를 변경합니다.
+//TODO: 코어데이터에서 미션 클리어 갯수를 가지고 와야함.
 extension EndingViewController {
     private func settingEndingSubTitleTextLabel() {
         let endingSubTitleText1 = "일일 미션 00개 "
