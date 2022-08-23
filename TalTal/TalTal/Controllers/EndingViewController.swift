@@ -20,7 +20,6 @@ class EndingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         settingEndingSubTitleTextLabel()
-//        clearMissionSetting()
     }
 
 }
@@ -32,15 +31,15 @@ extension EndingViewController {
         let dailyClearQuest = UserDefaults.standard.integer(forKey: "clearDailyMissionCount")
         let weeklyClearQuest = UserDefaults.standard.integer(forKey: "clearWeeklyMissionCount")
         
-        let endingSubTitleText1 = "일일 미션 \(dailyClearQuest)개 "
-        let endingSubTitleText2 = " 주간 미션 \(weeklyClearQuest)개"
+        let clearDeilyMissionString = "일일 미션 \(dailyClearQuest)개 "
+        let clearWeeklyMissionString = " 주간 미션 \(weeklyClearQuest)개"
 
-        let endingSubTitleTextLabelString = missionAessts.changeTextColor(fullText: endingSubTitleText1, color: UIColor(hex: "FF8166"), changeWords: ["일일 미션 \(dailyClearQuest)개"])
+        let claerDeilyMissionLabelString = missionAessts.changeTextColor(fullText: clearDeilyMissionString, color: UIColor(hex: "FF8166"), changeWords: ["일일 미션 \(dailyClearQuest)개"])
 
-        let endingSubTitleTextLabelStringPart2 = missionAessts.changeTextColor(fullText: endingSubTitleText2, color: UIColor(hex: "6261F8"), changeWords: ["주간 미션 \(weeklyClearQuest)개"])
+        let claerWeeklyMissionLabelString = missionAessts.changeTextColor(fullText: clearWeeklyMissionString, color: UIColor(hex: "6261F8"), changeWords: ["주간 미션 \(weeklyClearQuest)개"])
 
-        endingSubTitleTextLabelString.append(endingSubTitleTextLabelStringPart2)
-        subTitleLabel.attributedText = endingSubTitleTextLabelString
+        claerDeilyMissionLabelString.append(claerWeeklyMissionLabelString)
+        subTitleLabel.attributedText = claerDeilyMissionLabelString
     }
 }
 
