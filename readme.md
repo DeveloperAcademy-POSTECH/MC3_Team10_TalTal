@@ -12,6 +12,10 @@
 |:-:|:-:|:-:|:-:|:-:|
 |[Kkohma](https://github.com/hminkim)|[Ruyha](https://github.com/RuyHa)|[Felix](https://github.com/Felix9971)|[Joon](https://github.com/ChickenJoah)|[Toby](https://github.com/E-know)|
 
+## Youtube (이미지를 클릭해주세요!)
+
+[![Video Label](https://img.youtube.com/vi/le_SvKS8ZUw/maxresdefault.jpg)](https://youtu.be/le_SvKS8ZUw)
+
 ## Introduce Project
 <img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.001.jpeg">
 <img src="https://github.com/DeveloperAcademy-POSTECH/MC3_Team10_TalTal/blob/Readme/img/Presentation/MC3_오후_10팀_TalTal.002.jpeg">
